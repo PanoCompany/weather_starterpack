@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --percentageRotate: 90;
+}
+
+
+.chart {
+    margin: 0 auto;
+    list-style-type: none;
+    position: relative;
+}
+
+.chart *,
+.chart::before {
+    box-sizing: border-box;
+}
+
+.chart {
+    position: relative;
+    width: 120px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.chart::before,
+.chart::after {
+    position: absolute;
+}
+
+.chart::before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    border: 17px solid #F3F3F4;
+    border-bottom: none;
+    border-top-left-radius: 175px;
+    border-top-right-radius: 175px;
+}
+
+.chart div {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border: 17px solid #F3F3F4;
+    border-top: none;
+    border-bottom-left-radius: 175px;
+    border-bottom-right-radius: 175px;
+    transform-origin: 50% 0;
+}
+
+.chart div:nth-child(1) {
+    z-index: 4;
+    border-color: #FFBF5E;
+    transform: rotate(calc(var(--percentageRotate) * 1deg));
+}
