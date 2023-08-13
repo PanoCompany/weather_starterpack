@@ -1,3 +1,4 @@
+import { BiSearch } from "react-icons/bi";
 
 export default function TodayInfo() {
   return (
@@ -37,8 +38,8 @@ export default function TodayInfo() {
             backgroundRepeat: "no-repeat",
             backgroundImage:
               "url(https://images.unsplash.com/photo-1601108644994-1e450e786d3d?ixid=M3w0ODgwMTh8MHwxfHNlYXJjaHwxfHxIYSUyME5vaXxlbnwwfDB8fHwxNjkxODY2MTkzfDA&ixlib=rb-4.0.3)",
-            filter: "blur(1px)",
-            WebkitFilter: "blur(1px)",
+            filter: "blur(0px)",
+            WebkitFilter: "blur(0px)",
           }}
         ></div>
         <div className="absolute w-full top-1/2 -translate-y-1/2 text-center text-lg font-medium">
