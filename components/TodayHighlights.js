@@ -1,4 +1,3 @@
-import React from "react";
 import { BsFillSunriseFill, BsFillSunsetFill } from "react-icons/bs";
 import TodayCard from "./TodayCard";
 

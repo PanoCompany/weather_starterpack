@@ -1,9 +1,5 @@
-import { useState } from "react";
-import { BiSearch } from "react-icons/bi";
 
 export default function TodayInfo() {
-  const [showCitiesSuggest, setShowCitiesSuggest] = useState(false);
-
   return (
     <div className="w-[300px] flex flex-col gap-6 p-8 h-full rounded-l-[inherit] bg-[#242f40] text-gray-300">
       <div className="flex items-center gap-2">
@@ -12,26 +8,7 @@ export default function TodayInfo() {
           <input
             className="bg-transparent !outline-none h-5"
             placeholder="search city..."
-            onFocus={() => {
-              setShowCitiesSuggest(true);
-            }}
-            onBlur={() => {
-              setShowCitiesSuggest(false);
-            }}
           />
-          {showCitiesSuggest && (
-            <div className="absolute top-[130%] w-full bg-white rounded-md">
-              <div className="px-2 text-gray-700 hover:bg-gray-300 py-1 rounded-[inherit] cursor-pointer">
-                Ha Noi
-              </div>
-              <div className="px-2 text-gray-700 hover:bg-gray-300 py-1 rounded-[inherit] cursor-pointer">
-                Da Nang
-              </div>
-              <div className="px-2 text-gray-700 hover:bg-gray-300 py-1 rounded-[inherit] cursor-pointer">
-                Ho Chi Minh City
-              </div>
-            </div>
-          )}
         </div>
       </div>
       <img

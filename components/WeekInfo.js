@@ -1,4 +1,3 @@
-import React from "react";
 import WeekCard from "./WeekCard";
 
 export default function WeekInfo() {
