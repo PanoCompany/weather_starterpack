@@ -9,7 +9,7 @@ export default function TodayHighlights({ weather }) {
 
   return (
     <div className="row-span-2 w-full flex flex-col">
-      <h2 className="font-semibold pb-4">Today's Highlights</h2>
+      <h2 className="font-semibold pb-4">Today&apos;s Highlights</h2>
       <div className="grid grid-cols-3 grid-rows-2 gap-4 flex-1">
         <TodayCard title="UV Index">
           <div
