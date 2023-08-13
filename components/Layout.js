@@ -15,7 +15,7 @@ export default function App() {
 
   //EFFECT
   useEffect(() => {
-    if (!query) {
+    if (query.length < 4) {
       return;
     }
 
@@ -25,7 +25,9 @@ export default function App() {
     fetch(URL)
       .then((res) => res.json())
       .then((res) => {
-        setWeather(res);
+        if (res.ok) {
+          setWeather(res);
+        }
         console.log(res);
         setLoading(false);
       })
