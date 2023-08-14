@@ -25,7 +25,9 @@ export const useWeekDay = (index) => {
     "Sunday",
   ];
 
-  return weekday[index];
+  console.log(index)
+
+  return weekday[index % 7];
 };
 
 export const formatTime = (time, timeZone) => {

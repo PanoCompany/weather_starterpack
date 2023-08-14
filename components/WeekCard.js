@@ -7,7 +7,7 @@ export default function WeekCard({ weatherDay, index, temperatureType }) {
 
   return (
     <div className="bg-white rounded-lg shadow-sm flex flex-col items-center">
-      <h4 className="py-1 text-sm font-medium">{day.slice(0, 3)}</h4>
+      <h4 className="py-1 text-sm font-medium">{day}</h4>
       <img
         src={`https://ngoc.fly.dev/${weatherDay.weather[0].icon}.svg`}
         className="w-[70%] aspect-square"
