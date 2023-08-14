@@ -22,6 +22,7 @@ export const useWeekDay = (index) => {
     "Thursday",
     "Friday",
     "Saturday",
+    "Sunday",
   ];
 
   return weekday[index];
